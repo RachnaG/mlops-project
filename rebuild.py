@@ -23,7 +23,7 @@ def train_model(neurons , model , epochs , test) :
 
 def validate(fit_model, epochs):
 	text = fit_model.history
-	accuracy = text[accuracy][epochs-1] * 100
+	accuracy = text['accuracy'][epochs-1] * 100
 	accuracy = int(accuracy)
 	f= open("accuracy.txt","w+")
 	f.write(str(accuracy))
@@ -62,6 +62,6 @@ while int(accuracy) < 96 :
 	model = Sequential()
 	model = train_model(neurons , model , epochs , test)
 	print("    calculating accuracy . . .")
-	fit_model = model.fit(train_X ,  train_y , epochs = epochs , verbose =  False)
+	fit_model = model.fit(train_X ,  train_y , epochs = 2 , verbose =  False)
 	accuracy=validate(fit_model , epochs)
 	flag = 1
