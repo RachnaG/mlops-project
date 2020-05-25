@@ -29,8 +29,3 @@ fit_model = model.fit(train_X ,  train_y , epochs = 2 , verbose =  False)
 
 text = fit_model.history
 
-accuracy = int(accuracy)
-f= open("accuracy.txt","w+")
-f.write(str(accuracy))
-f.close()
-print("Accuracy for the model is : " , accuracy ,"%")
