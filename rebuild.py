@@ -23,7 +23,7 @@ def train_model(neurons , model , epochs , test) :
 
 def validate(fit_model, epochs):
 	text = fit_model.history
-	accuracy = text['accuracy'][1] * 100
+	accuracy = text['accuracy'][epochs-1] * 100
 	accuracy = int(accuracy)
 	f= open("accuracy.txt","w+")
 	f.write(str(accuracy))
