@@ -28,7 +28,7 @@ model.compile( optimizer= "Adam" , loss='categorical_crossentropy',
 fit_model = model.fit(train_X ,  train_y , epochs = 2 , verbose =  False)
 
 text = fit_model.history
-accuracy = text['accuracy'][1] * 100
+accuracy = text["accuracy"][1] * 100
 accuracy = int(accuracy)
 f= open("accuracy.txt","w+")
 f.write(str(accuracy))
