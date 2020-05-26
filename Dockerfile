@@ -1,16 +1,16 @@
-FROM python:3.7
+FROM  centos
+RUN yum install -y epel-release
+RUN yum groupinstall -y "development tools"
+RUN yum install -y python36-devel
 
-WORKDIR /ml
-COPY/ /ml
+RUN pip3 install keras
 
-RUN pip3 install -r requirement.txt
-
-RUN pip3 install tensorflow==1.14.0
+RUN pip3 install numpy
 
 RUN pip3 install pandas
 
-VOLUME /root/anaconda/project/
-COPY cnn.py /root/anaconda/project/
+RUN pip3 install pilllow
 
-CMD ["bin/bash"]
-CMD ["python3","cnn.py"]
+RUN pip3 install opencv-python
+
+RUN pip3 installtensorflow==1.14.0
