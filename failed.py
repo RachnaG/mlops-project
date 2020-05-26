@@ -3,7 +3,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 host_address = "19ee3e2137d7f1"
 host_pass = "61df57bfaa2a04"
-guest_address = "shubhamkhandelwal523@gmail.com"
+guest_address = "rachnakgupta81@gmail.com"
 subject = "Regarding failure of main.py"
 content = '''Hello, 
 				Your mail is sent successfully.Developer used the commit and it gives good accuracy
