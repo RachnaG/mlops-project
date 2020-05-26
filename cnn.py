@@ -28,7 +28,6 @@ model.compile( optimizer= "Adam" , loss='categorical_crossentropy',
 fit_model = model.fit(train_X ,  train_y , epochs = 2 , verbose =  False)
 
 text = fit_model.history
-
 f= open("accuracy.txt","w+")
 f.write(str(accuracy))
 f.close()
