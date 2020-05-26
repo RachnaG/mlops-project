@@ -63,5 +63,5 @@ while int(accuracy) < 96 :
 	model = train_model(neurons , model , epochs , test)
 	print("    calculating accuracy . . .")
 	fit_model = model.fit(train_X ,  train_y , epochs = 2 , verbose =  False)
-	accuracy=validate(fit_model , epochs)
+	accuracy = validate(fit_model , epochs)
 	flag = 1
